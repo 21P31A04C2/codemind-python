@@ -1,13 +1,14 @@
-def p(n):
+def fun(n):
+    c=0
     for i in range(2,n):
         if n%i==0:
-            return False
-    else:
+            c=c+1
+    if c==0:
         return True
-x=int(input())
-y=int(input())
-for i in range(x,y+1):
+    return False
+a=int(input())
+b=int(input())
+for i in range(a,b):
     if i>1:
-        if p(i):
+        if fun(i):
             print(i)
-        
